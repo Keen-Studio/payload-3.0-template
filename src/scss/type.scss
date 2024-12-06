@@ -1,0 +1,164 @@
+@use "./functions.scss" as *;
+@use "./queries.scss" as *;
+@use "./vars.scss" as *;
+
+@mixin jumbo {
+  font-size: base(3);
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: -2px;
+  font-family: $fontHeading;
+
+  @include extra-large-break {
+    font-size: base(2);
+  }
+
+  @include mid-break {
+    font-size: base(1.5);
+  }
+}
+
+@mixin h1 {
+  font-size: base(2.5);
+  line-height: 1.125;
+  font-weight: 500;
+  font-family: $fontHeading;
+  letter-spacing: 1px;
+
+  @include extra-large-break {
+    font-size: base(2.25);
+  }
+
+  @include large-break {
+    font-size: base(2);
+  }
+
+  @include mid-break {
+    font-size: base(1.85);
+  }
+
+  @include small-break {
+    font-size: base(1.55);
+  }
+}
+
+@mixin h2 {
+  font-size: base(2.5);
+  line-height: 1.125;
+  font-weight: 500;
+  margin: 0 0 base();
+  font-family: $fontHeading;
+  letter-spacing: 1px;
+
+  @include extra-large-break {
+    font-size: base(2);
+  }
+
+  @include large-break {
+    font-size: base(1.85);
+  }
+
+  @include mid-break {
+    font-size: base(1.5);
+  }
+
+  @include small-break {
+    font-size: base(1.35);
+  }
+}
+
+@mixin h3 {
+  font-size: base(2);
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0 0 base();
+  letter-spacing: 1px;
+  font-family: $fontHeading;
+
+  @include extra-large-break {
+    font-size: base(1.4);
+  }
+
+  @include mid-break {
+    font-size: base(1.1);
+  }
+}
+
+@mixin h4 {
+  font-size: base();
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0 0 base();
+  letter-spacing: 1px;
+  font-family: $fontHeading;
+
+  @include extra-large-break {
+    font-size: base(.85);
+  }
+
+  @include mid-break {
+    font-size: base(.75);
+  }
+}
+
+@mixin h5 {
+  font-size: base(.85);
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0 0 base();
+  font-family: $fontHeading;
+  letter-spacing: 0.75px;
+
+  @include extra-large-break {
+    font-size: base(0.75);
+  }
+
+  @include mid-break {
+    font-size: base(0.65);
+  }
+}
+
+@mixin h6 {
+  font-size: base(0.625);
+  line-height: 1.25;
+  font-family: $fontHeading;
+  margin: 0 0 base();
+  font-weight: 400;
+  letter-spacing: 0.55px;
+
+  @include extra-large-break {
+    font-size: base(0.55);
+  }
+
+  @include mid-break {
+    font-size: base(0.55);
+  }
+}
+
+@mixin p {
+  @include small;
+  @include mid-break {
+  }
+}
+
+@mixin large-body {
+  font-size: base(0.8);
+}
+
+@mixin a {
+}
+
+@mixin ol {
+}
+
+@mixin ul {
+}
+
+@mixin li {
+}
+
+@mixin small {
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+}

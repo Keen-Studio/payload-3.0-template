@@ -1,0 +1,28 @@
+@mixin hide-scrollbar {
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @mixin custom-scrollbar {
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: var(--scrollbar-track);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb);
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--scrollbar-hover);
+    }
+  }

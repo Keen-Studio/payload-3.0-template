@@ -1,0 +1,172 @@
+@use "./mixins.scss" as *;
+@use "./functions.scss" as *;
+@use "./queries.scss" as *;
+@use "./vars.scss" as *;
+@use "./type.scss" as *;
+@import "./fonts.scss";
+
+#__next {
+  height: 100%;
+}
+
+/* Root Variables */
+:root {
+  --html-font-size: #{$html-font-size-xl};
+  --html-line-height: #{$html-line-height-xl};
+  --global-spacing: #{$global-spacing-lg};
+
+  --font-body: #{$fontBody}, sans-serif;
+  --font-heading: #{$fontBody}, sans-serif;
+
+  --color-grey: #{$app-color-grey};
+  --color-light-grey: #{$app-color-light-grey};
+  --color-black: #{$app-color-black};
+  --color-white: #{$app-color-white};
+
+  --gap: #{$gap};
+}
+
+/* Breakpoint Adjustments */
+@include large-break {
+  :root {
+    --global-spacing: #{$global-spacing-md};
+  }
+}
+
+@include mid-break {
+  :root {
+    --global-spacing: #{$global-spacing-sm};
+  }
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: #{$fontBody}, sans-serif;
+  font-size: calc(#{var(--html-font-size)} * 1px);
+  line-height: calc(#{var(--html-line-height)} * 1px);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+
+  @include large-break {
+    @at-root {
+      :root {
+        --html-font-size: #{$html-font-size-l};
+        --html-line-height: #{$html-line-height-l};
+      }
+    }
+  }
+
+  @include mid-break {
+    @at-root {
+      :root {
+        --html-font-size: #{$html-font-size-m};
+        --html-line-height: #{$html-line-height-m};
+      }
+    }
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: #{$fontBody}, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+
+/* Headings */
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  @include h5;
+}
+
+h6 {
+  @include h6;
+}
+
+/* Paragraphs */
+p {
+  @include p;
+}
+
+/* Bold Text */
+b,
+strong {
+  font-weight: 600;
+}
+
+/* Lists */
+ul {
+  @include ul;
+}
+
+li {
+  @include li;
+}
+
+li > ul,
+li > ol {
+  margin-top: base(0.5);
+}
+
+/* Small Text */
+small {
+  font-size: 75%;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 1px solid currentColor;
+  margin: 0;
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
+  margin: 0;
+}
+
+/* SVG Styling */
+svg {
+  path,
+  circle,
+  line {
+    vector-effect: non-scaling-stroke;
+  }
+}
+
+/* Dark Mode Support (Optional) */
+/*.dark {
+  html {
+    // Add dark mode customizations for html
+  }
+
+  body {
+    // Add dark mode customizations for body
+  }
+}*/

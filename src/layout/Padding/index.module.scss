@@ -1,0 +1,83 @@
+@use @scss/common' as *;
+
+.padding-bottom-small {
+    padding-bottom: 48px;
+
+    @include extra-large-break {
+        padding-bottom: 36px;
+    }
+
+    @include small-break {
+        padding-bottom: 16px;
+    }
+}
+
+.padding-bottom-medium {
+    padding-bottom: 72px;
+
+    @include extra-large-break {
+        padding-bottom: 58px;
+    }
+
+    @include mid-break {
+        padding-bottom: 40px;
+    }
+}
+
+.padding-bottom-large {
+    padding-bottom: 108px;
+
+    @include extra-large-break {
+        padding-bottom: 84px;
+    }
+
+    @include mid-break {
+        padding-bottom: 48px;
+    }
+}
+
+.padding-top-small {
+    padding-top: 48px;
+
+    @include extra-large-break {
+        padding-top: 36px;
+    }
+
+    @include small-break {
+        padding-top: 16px;
+    }
+}
+
+.padding-top-medium {
+    padding-top: 72px;
+
+    @include extra-large-break {
+        padding-top: 58px;
+    }
+
+    @include mid-break {
+        padding-top: 40px;
+    }
+}
+
+.padding-top-large {
+    padding-top: 108px;
+
+    @include extra-large-break {
+        padding-top: 84px;
+    }
+
+    @include mid-break {
+        padding-top: 48px;
+    }
+}
+
+.padding {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    h1 {
+        margin: 0;
+    }
+}

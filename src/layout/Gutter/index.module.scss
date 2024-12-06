@@ -1,0 +1,29 @@
+@use '../../scss/common.scss' as *;
+
+.pageWrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.gutter {
+    width: 100%;
+    max-width: $max-screen-width;
+    margin: 0 auto;
+    padding: 0 156px;
+
+    @include large-break {
+        padding: 0 118px;
+    }
+    @include mid-break {
+        padding: 0 84px;
+    }
+    @include small-break {
+        padding: 36px;
+    }
+    @include extra-small-break {
+        padding: 12px;
+    }
+}

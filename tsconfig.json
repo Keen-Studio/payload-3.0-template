@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@scss/*": ["./src/scss/*"],
+      "@blocks/*": ["./src/blocks/*"],
+      "@collections/*": ["./src/collections/*"],
+      "@fields/*": ["./src/fields/*"],
+      "@utilities/*": ["./src/utilities/*"],
+      "@heros/*": ["./src/heros/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@access/*": ["./src/access/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@endpoints/*": ["./src/endpoints/*"],
+      "@search/*": ["./src/search/*"],
+      "@cssVariables": ["./src/cssVariables"],
+      "@types": ["./src/types/*"],
+      "@": ["./src/*"],
+      "@payload-types": ["./src/payload-types"],
+      "@payload-config": [
+        "./src/payload.config.ts"
+      ],
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "redirects.js",
+    "next.config.js",
+    "next-sitemap.config.cjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
