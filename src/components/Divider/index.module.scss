@@ -1,0 +1,8 @@
+@use '@scss/common' as *;
+
+.divider {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(186, 186, 186);
+}
