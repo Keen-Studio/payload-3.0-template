@@ -29,6 +29,7 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@scss/*": ["./src/scss/*"],
+      "@header/*": ["./src/header/*"],
       "@blocks/*": ["./src/blocks/*"],
       "@collections/*": ["./src/collections/*"],
       "@fields/*": ["./src/fields/*"],
@@ -41,7 +42,6 @@
       "@endpoints/*": ["./src/endpoints/*"],
       "@search/*": ["./src/search/*"],
       "@cssVariables": ["./src/cssVariables"],
-      "@types": ["./src/types/*"],
       "@": ["./src/*"],
       "@payload-types": ["./src/payload-types"],
       "@payload-config": [
