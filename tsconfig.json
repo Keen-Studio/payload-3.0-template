@@ -29,7 +29,10 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@scss/*": ["./src/scss/*"],
-      "@header/*": ["./src/header/*"],
+      "@header/*": ["./src/layout/Header/*"],
+      "@footer/*": ["./src/layout/Footer/*"],
+      "@Header/*": ["./src/layout/Header/*"],
+      "@Footer/*": ["./src/layout/Footer/*"],
       "@blocks/*": ["./src/blocks/*"],
       "@collections/*": ["./src/collections/*"],
       "@fields/*": ["./src/fields/*"],
